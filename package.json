@@ -4,7 +4,9 @@
     "license": "MIT",
     "description": "A node/socket.io chat server",
     "dependencies": {
+        "body-parser": "^1.18.3",
         "express": "^4.16.3",
+        "jsonwebtoken": "^8.2.2",
         "socket.io": "^2.1.1"
     },
     "devDependencies": {
