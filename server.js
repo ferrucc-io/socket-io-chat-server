@@ -28,7 +28,8 @@ router.post('/login', (req, res) => {
   };
   // DB authentication goes here
   const token = jwt.sign(user, config.secret, { expiresIn: config.tokenLife });
-  const refreshToken = jwt.sign(user, config.refreshTokenSecret, { expiresIn: config.refreshTokenLife });
+  const reftoken = config.refreshTokenLife;
+  const refreshToken = jwt.sign(user, config.refreshTokenSecret, { expiresIn: reftoken });
   const response = {
     status: 'Logged in',
     token,
