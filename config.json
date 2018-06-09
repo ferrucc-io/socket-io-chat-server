@@ -1,5 +1,6 @@
 {
     "secret": "shh-dont-tell-anyone",
+    "database": "mongodb://localhost:27017/",
     "refreshTokenSecret": "some-secret-refresh-token",
     "port": 3000,
     "tokenLife": 900,
